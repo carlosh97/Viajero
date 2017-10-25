@@ -27,6 +27,15 @@ void leerCiudades(vector<string> &sVector, int iR ) {
     //Declaracion de variables
     string sCity = " ";
     string sValor = " ";
+    string sCity_2 = " ";
+    bool bAux = false;
+    
+    while (<#condition#>) {
+        <#statements#>
+    }
+    
+}
+
  
 //Funcion principal
 int main() {
