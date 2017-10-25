@@ -21,6 +21,13 @@ void desplegarVector(vector<string> vector) {
     }
 }
 
+//Funcion que lee las ciudades y sus conexiones con otras
+void leerCiudades(vector<string> &sVector, int iR ) {
+    
+    //Declaracion de variables
+    string sCity = " ";
+    string sValor = " ";
+ 
 //Funcion principal
 int main() {
     
@@ -41,6 +48,7 @@ int main() {
         sVector.push_back(sFrase);
     }
     
+    leerCiudades(sVector, iRoad);
     desplegarVector(sVector);
     
     return 0;
