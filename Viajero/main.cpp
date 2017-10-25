@@ -28,21 +28,48 @@ void leerCiudades(vector<string> &sVector, int iR ) {
     string sCity = " ";
     string sValor = " ";
     string sCity_2 = " ";
-    bool bAux = false;
+    bool bAux = true;
+    bool bAux_2 = true;
     
-    while (<#condition#>) {
-        <#statements#>
+    for (int iK = 0; iK < iR; iK++) {
+        
+        cin >> sCity >> sValor >> sCity_2;
+        
+        for (int iJ = 0; iJ < sVector.size(); iJ++) {
+            
+            if (sVector[iK] == sCity && bAux == true) {
+                
+                bAux = false;
+            }
+            
+            if (sVector[iK] == sCity_2 && bAux_2 == true) {
+                
+                bAux_2 = false;
+            }
+        }
+        
+        if (bAux == true) {
+            
+            sVector.push_back(sCity);
+        }
+        else if (bAux_2 == true) {
+            
+            sVector.push_back(sCity_2);
+        }
+        
+        bAux = true;
+        bAux_2 = true;
+        
     }
-    
 }
 
- 
+
 //Funcion principal
 int main() {
     
     //Declaracion de variables
     vector<string> sVector;
-    vector<vector<int>> iVector;
+    vector< vector<int> > iVector;
     string sFrase = " ";
     int iLocation = 0; //N
     int iCar = 0; //C
